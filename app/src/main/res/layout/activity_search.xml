@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".SearchActivity">
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/search_box_background">
+
+        <ImageView
+            android:focusable="true"
+            android:clickable="true"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginBottom="13dp"
+            android:contentDescription="@null"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:src="@drawable/google_icon"/>
+
+        <EditText
+            android:id="@+id/SearchBar"
+            android:layout_marginStart="5dp"
+            android:textSize="17sp"
+            android:textCursorDrawable="@null"
+            android:textColorHint="@color/light_grey"
+            android:textColor="@color/black"
+            android:autofillHints="none"
+            android:imeOptions="actionSearch"
+            android:inputType="textCapSentences"
+            android:paddingStart="15dp"
+            android:paddingEnd="0dp"
+            android:hint="@string/search"
+            android:background="@color/lighter_grey"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:layout_marginStart="10dp"
+            android:padding="5dp"
+            android:contentDescription="@string/mic"
+            android:focusable="true"
+            android:clickable="true"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/google_mic"
+            android:layout_marginEnd="20dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>
